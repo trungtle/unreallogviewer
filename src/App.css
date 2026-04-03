@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Monolisa';
+  src: url('./assets/fonts/MonoLisa/MonoLisa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monolisa';
+  src: url('./assets/fonts/MonoLisa/MonoLisa-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Monolisa';
+  src: url('./assets/fonts/MonoLisa/MonoLisa-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monolisa';
+  src: url('./assets/fonts/MonoLisa/MonoLisa-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  text-align: left;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  font-family: 'Monolisa', 'Courier New', Courier, monospace;
+  font-size: .7em;
+}
+
+.unreallogviewer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-container {
+  justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
+}
+
+.file-name {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.memreport-menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  flex-grow: 1;
+  display: flex;
+}
+
+.log-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.log-raw {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  white-space: pre;
+  font-family: 'Monolisa', 'Courier New', Courier, monospace;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.log-empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  font-size: 1.2em;
+}
